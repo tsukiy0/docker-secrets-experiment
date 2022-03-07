@@ -6,5 +6,10 @@ RUN apt-get update \
     vim \
     tmux
 
+# dive
+WORKDIR /install/dive
+RUN wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
+RUN apt-get install -y ./dive_0.9.2_linux_amd64.deb
+
 # shell
 RUN echo "bindkey -v" >> /home/node/.zshrc
