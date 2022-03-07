@@ -1,0 +1,16 @@
+{
+    "name": "docker-secrets-experiment",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "main",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.shell.*": "zsh"
+    },
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "github.copilot"
+    ],
+    "features": {
+        "docker-in-docker": "latest"
+    }
+}
