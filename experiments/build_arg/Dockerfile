@@ -1,0 +1,7 @@
+FROM node:14-alpine
+
+ARG SECRET
+ENV SECRET=${SECRET}
+
+WORKDIR /app
+RUN echo ${SECRET}
